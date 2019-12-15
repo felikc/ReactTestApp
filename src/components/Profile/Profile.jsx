@@ -1,23 +1,18 @@
 import React from 'react';
+import s from './Profile.module.css';
+import MyPosts from './MyPosts/MyPosts';
+
 
 const Profile = () => {
-    return <div className='content'>
+    return (<div className={s.content}>
         <div>
             <img src="https://www.kmeta.bg/uploads/municipality/header_image/16/burgas_.jpg" alt="" />
         </div>
         <div>
             ava+description
         </div>
-        <div>
-            My posts
-          <div>
-                New Post
-          </div>
-            <div>Post1</div>
-            <div>Post2</div>
-        </div>
-        Main content
-      </div>
+        <MyPosts />
+    </div>);
 }
 
 export default Profile;
